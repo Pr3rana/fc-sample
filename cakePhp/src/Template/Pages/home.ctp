@@ -34,8 +34,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 
                         <!-- Include the correct path for `fusioncharts.js`  to render the chart. Otherwise, it may lead to JavaScript errors. -->
                         <script src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
-
-  <script src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js"></script>
+                        <script src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js"></script>
 
                     </head>
                     <body>
