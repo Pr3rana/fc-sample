@@ -48,7 +48,7 @@
             "yAxisNameFontSize" => "13",
       "exportEnabled" => "1",
       "exportAtClientSide" => "0",
-      "exportHandler" =>"http://localhost/myphp/php_fc/Sample/Query_Sample/php-export-handler/index.php",
+      "exportHandler" =>"http://localhost/fc-sample/php_exportChart/php-export-handler/index.php",
       "exportAction" => "save",
       "exportShowMenuItem"=>'0',
       "exportFormat" => "png",
