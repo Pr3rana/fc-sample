@@ -56,7 +56,7 @@ if ($dbhandle->connect_error) {
         	$categoryArray=array();
         	$dataseries1=array();
         	$dataseries2=array();
-          $dataseries3=array();
+          	$dataseries3=array();
 
           // pushing category array values
         	while($row = mysqli_fetch_array($result)) {
@@ -73,14 +73,14 @@ if ($dbhandle->connect_error) {
 					"value" => $row["value2"]
 					)
 				);
-        array_push($dataseries3, array(
+        		array_push($dataseries3, array(
 					"value" => $row["value3"]
 					)
 				);
 
     	}
 
-    	$arrData["categories"]=array(array("category"=>$categoryArray));
+    		$arrData["categories"]=array(array("category"=>$categoryArray));
 			// creating dataset object
 			$arrData["dataset"] = array(array("seriesName"=> "Actual Revenue", "data"=>$dataseries1), array("seriesName"=> "Projected Revenue",  "renderAs"=>"line", "data"=>$dataseries2),array("seriesName"=> "Profit",  "renderAs"=>"area", "data"=>$dataseries3));
 
