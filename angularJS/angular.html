@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+
+	<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+	<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.charts.js"></script>
+	<script type="text/javascript" src="https://code.angularjs.org/1.5.1/angular.min.js"></script>
+	<script type="text/javascript" src="fusioncharts/angular-fusioncharts.min.js"></script>
+	<script type="text/javascript" src="angular.js"></script>
+	
+</head>
+<body>
+	<div ng-controller="MyController">
+	    <fusioncharts id="chartContainer" width="600" height="400" type="column2d" dataSource="{{myDataSource}}"></fusioncharts>
+	    </div>
+	</div>
+</body>
+</html>
+
