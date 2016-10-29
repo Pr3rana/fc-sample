@@ -38,3 +38,4 @@ if (file_exists(__DIR__ . '/../config/development.config.php')) {
 
 // Run the application!
 Application::init($appConfig)->run();
+

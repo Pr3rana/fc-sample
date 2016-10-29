@@ -15,78 +15,43 @@
             /*
                 Create a `lineChart` chart object using the FusionCharts PHP class constructor. Syntax for the constructor is `FusionCharts("type of chart", "unique chart id", "width of chart", "height of chart", "div id to render the chart", "data format", "data source")`. To load data from an XML string, `xml` is passed as the value for the data format parameter of the constructor. The actual XML data for the chart is passed as a string to the constructor.
             */
-$columnChart = new FusionCharts("column2d", "myFirstChart" , 600, 300, "chart 1", "json",
+$columnChart = new FusionCharts("column3d", "myFirstChart" , 600, 300, "chart 1", "json",
 '{
-  "chart": {
-    "caption": "Caption",
-    "subcaption": "subCaption",
-    "xaxisname": "XaxisName",
-    "plotToolText": "$displayValue.%",
-    "yaxisname": "Sales",
-    "linethickness": "2",
-    "palettecolors": "1074B2, 749A33, C6C0FF, D3B04E, cccccc ",
-    "basefontcolor": "#333333",
-    "basefont": "Helvetica Neue,Arial",
-    "captionfontsize": "14",
-    "subcaptionfontsize": "14",
-    "subcaptionfontbold": "0",
-    "showvalues": "0",
-    "bgcolor": "#ffffff",
-    "bgalpha": "0",
-    "showshadow": "0",
-    "canvasbgcolor": "#ffffff",
-    "canvasborderalpha": "0",
-    "divlinealpha": "100",
-    "divlinecolor": "#999999",
-    "divlinethickness": "1",
-    "divlinedashed": "1",
-    "divlinedashlen": "1",
-    "exportEnabled": "1",
-    "divlinegaplen": "1",
-    "showxaxisline": "1",
-    "xaxislinethickness": "1",
-    "xaxislinecolor": "#999999",
-    "showalternatehgridcolor": "0"
-},
-    "data": [
-      {
-        "displayValue": "15.12",
-        "label": "Mon",
-        "value": "15123"
-      },
-      {
-        "displayValue": "14.23",
-        "label": "Tue",
-        "value": "14233"
-      },
-      {
-        "displayValue": "23.51",
-        "label": "Wed",
-        "value": "23507"
-      },
-      {
-        "displayValue": "9.11",
-        "label": "Thur",
-        "value": "9110"
-      },
-      {
-        "displayValue": "15.53",
-        "label": "fri",
-        "value": "15529"
-      },
-      {
-        "displayValue": "20.8",
-        "label": "Sat",
-        "value": "20803"
-      },
-      {
-        "displayValue": "19.2",
-        "label": "Sun",
-        "value": "19202"
-      }
-    ]
-  
-}'
+            "chart": {
+                "caption": "Quarterly Revenue",
+                "subCaption": "Last year",
+                "xAxisName": "Quarter",
+                "yAxisName": "Amount (In USD)",
+                "theme": "fint",
+                "numberPrefix": "$",
+                //Setting the usage of plot gradient
+                "usePlotGradientColor": "1",
+                //Custom plot gradient color
+                "plotGradientColor": "#eeeeee"
+            },
+            "data": [
+                {
+                    "label": "Q1",
+                    "value": "1950000",
+                    "color": "#008ee4"
+                }, 
+                {
+                    "label": "Q2",
+                    "value": "1450000",
+                    "color": "#9b59b6"
+                }, 
+                {
+                    "label": "Q3",
+                    "value": "1730000",
+                    "color": "#6baa01"
+                }, 
+                {
+                    "label": "Q4",
+                    "value": "2120000",
+                    "color": "#e44a00"
+                }
+            ]
+        }'
                                         );
             // Render the chart
             $columnChart->render();
